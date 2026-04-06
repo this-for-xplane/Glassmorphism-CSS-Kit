@@ -14,22 +14,3 @@ iOS 26 Aesthetic: Ultra-fine borders, optimized saturation, and balanced transpa
 
 # 🛠 Core Optimized Snippet
 To keep things fast, we use will-change and translateZ(0) to force hardware acceleration.
-
-/* The "Eco-Glass" Standard */
-.glass-panel {
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(15px) saturate(160%);
-  -webkit-backdrop-filter: blur(15px) saturate(160%);
-  
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-
-  /* Performance Hacks */
-  will-change: backdrop-filter;
-  transform: translateZ(0); 
-  backface-visibility: hidden;
-}
-
-
-
-made readme with ai, don't trust
